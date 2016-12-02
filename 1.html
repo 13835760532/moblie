@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    html,body{
+        margin: 0;
+        padding: 0;
+    }
+    .left{
+        width: 5rem;
+        height: 2rem;
+        float: left;
+        background: antiquewhite;
+    }
+    .right{
+        width: 2.5rem;
+        height: 2rem;
+        float: left;
+        background: red;
+    }
+</style>
+<script>
+    function resize(originSize) {
+        var width=document.documentElement.clientWidth;
+        var bili=width/originSize*100;
+        document.getElementsByTagName("html")[0].style.fontSize=bili+"px";
+    }
+    resize(750)
+</script>
+<body>
+    <div class="box">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

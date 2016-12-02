@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="tiaoguo">跳过</div>
+
+            <div class="bg2"></div>
+            <div class="title title2">
+                <div class="ani left"  swip
+                     er-animate-effect="fadeInX" swiper-animate-duration="0.5s" swiper-animate-delay="1s">酷炫音效助你完美演绎</div>
+                <div class="ani right"  swiper-animate-effect="fadeInY" swiper-animate-duration="0.5s" swiper-animate-delay="1s">自由变调成就个人style</div>
+            </div>
+        </div>
+        <div class="swiper-slide slide3">
+            <div class="tiaoguo">跳过</div>
+            <h1 class="ani"  swiper-animate-effect="rollIn" swiper-animate-duration="0.5s">个性问候音</h1>
+            <h3 class="ani"  swiper-animate-effect="zoomInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">录制属于你的"Hello Kugou"</h3>
+            <div class="bg3"></div>
+            <div class="title title3">
+                <div class="ani left" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">马上录制</div>
+                <div class="ani right" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">立即体验</div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+</body>
+<script>
+    var swiper = new Swiper('.swiper-container',{
+        pagination: '.swiper-pagination',
+            paginationClickable: true,
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+            swiperAnimateCache(swiper); //隐藏动画元素
+            swiperAnimate(swiper); //初始化完成开始动画
+        },
+        onSlideChangeEnd: function(swiper){
+            swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+        }
+    });
+</script>
+</html>
