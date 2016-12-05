@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<div class="header-wrap show">
+    <ul class="btn">
+        <li><</li>
+        <li>...</li>
+    </ul>
+</div>
+<div class="show-main">
+    <div class="show-title">
+        <h1 class="title">囧神麦基又出经典作品！帮对手发球+后滚翻</h1>
+        <span>封面新闻</span>
+        <div class="time">12-04 15:05</div>
+    </div>
+    <div class="show-content">
+        <img src="1.jpg" alt="">
+        <div class="txt-des">【花絮】麦基为对方发底线球 这智商笑翻勇士板凳席</div>
+        <p>腾讯体育12月4日讯 “NBA著名行为表演艺术家”和“囧神”贾瓦尔-麦基今天又贡献经典作品和《五大囧》素材：他在队友罚球得分后跑去帮太阳发球；在被对手犯规打倒在地过后，往后翻跟头爬起来。</p>
+        <p><a href="http://info.3g.qq.com/g/s?aid=nba_ss&amp;id=sports_20161204010532">【又出黑脚？格林踢中对手屁股 这一幕逃过判罚】</a></p>
+        <p><a href="http://info.3g.qq.com/g/s?aid=nba_ss&amp;id=sports_20161204010225">【30分16板！勇士双援爆了！库班这回终于笑了！】</a></p>
+    </div>
+    <div class="about">
+        <div class="tuijian">-相关推荐-</div>
+        <ul class="tab-list-item">
+            <li>
+                <a href="">
+                    <div class="detail">
+                        <div class="tit">习近平:扎实推进军队规模结构和力量编成改革                                     </div>
+                        <div class="info">
+                            <span>置顶</span>
+                            <span>专题</span>
+                            <div class="assess">
+                                <span>495</span>评
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-img">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="detail">
+                        <div class="tit">习近平:扎实推进军队规模结构和力量编成改革                                     </div>
+                        <div class="info">
+                            <span>置顶</span>
+                            <span>专题</span>
+                            <div class="assess">
+                                <span>495</span>评
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-img">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="detail">
+                        <div class="tit">习近平:扎实推进军队规模结构和力量编成改革                                     </div>
+                        <div class="info">
+                            <span>置顶</span>
+                            <span>专题</span>
+                            <div class="assess">
+                                <span>495</span>评
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-img">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<div class="showfooter">
+    <span>评一下</span>
+    <span>8</span>
+    <span></span>
+</div>
+</body>
+<script>
+    var swiper = new Swiper('.swiper-container',{
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+            swiperAnimateCache(swiper); //隐藏动画元素
+            swiperAnimate(swiper); //初始化完成开始动画
+        },
+        onSlideChangeEnd: function(swiper){
+            swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+        }
+    });
+</script>
+</html>

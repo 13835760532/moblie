@@ -1,0 +1,316 @@
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,header,section{
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-style: normal;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;/*下划线*/
+}
+img{
+    border: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.header-wrap{
+    width: 100%;
+    height: 0.94rem;
+    background: #fff;
+    border-bottom: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    z-index: 1000;
+    position: fixed;
+    left:0;
+}
+.main{
+    position: absolute;
+    left:0;
+    right: 0;
+    margin: 1rem auto 0;
+}
+.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+.btn{
+    width: 90%;
+    height:0.92rem;
+    margin: 0 auto;
+    z-index: 10;
+    background: #fff;
+}
+.btn li{
+    width: 1rem;
+    height: 100%;
+    float: left;
+    margin: 0 5px;
+    text-align: left;
+    font-size: 0.34rem;
+    line-height: 0.92rem;
+}
+.btn li:nth-child(1){
+    margin-left: 0px;
+}
+.btn li:nth-child(5){
+    float: right;
+    text-align: right;
+    margin-right: 0;
+    font-size: 0.60rem;
+    font-weight: 400;
+}
+.bb{
+    color:blue;
+}
+.wheel{
+    width: 90%;
+    height:3.68rem;
+    margin:0 auto;
+    overflow: hidden;
+
+}
+.banner{
+    width: 400%;
+    height:3.68rem;
+    background: blue;
+    margin:0 auto;
+}
+.banner img{
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+.index-list{
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.scale{
+    width: 400%;
+    height: auto;
+}
+.index-box{
+    width: 25%;
+    height: auto;
+    float: left;
+}
+.box{
+    border-top: 1px solid #CCCCCC;
+    width: 100%;
+    height:auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.header{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: left;
+}
+.content{
+    height: 0.8rem;
+    font-size: 0.4rem;
+    float: left;
+    font-weight: bold;
+    color: #000000;
+    line-height: 0.8rem;
+
+}
+.time{
+    height: 0.8rem;
+    font-size: 0.3rem;
+    float: right;
+    opacity: 0.7;
+    line-height: 0.8rem;
+}
+.tab-list-item{
+    width: 100%;
+    height:auto;
+    margin: 0 auto;
+    float: left;
+}
+.tab-list-item li{
+    height: 1.46rem;
+    padding: 10px 0;
+    position: relative;
+}
+.tit{
+    font-weight: 400;
+    font-size: 0.32rem;
+    color: #1b1b1b;
+    width: 65%;
+    line-height: 0.5rem;
+}
+.u-img{
+    width: 2rem;
+    height: 1.32rem;
+    background: red;
+    position: absolute;
+    right: 0;top:0;bottom:0;
+    margin: auto 0;
+}
+.u-img img{
+    width: 100%;
+    height: 100%;
+}
+.info{
+    height: auto;
+    height: 0.4rem;
+    width: 65%;
+}
+.info span{
+    font-size: 0.24rem;
+    float: left;
+    line-height: 0.4rem;
+    color:#888;
+}
+.assess{
+    float: left;
+    margin-left: 0.2rem;
+    font-size: 0.24rem;
+    line-height: 0.4rem;
+    color:#888;
+}
+footer{
+    width: 100%;
+    height:1.2rem;
+    border-top: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    position: fixed;
+    left:0;
+    bottom:0;
+    background: #ffffff;
+    z-index: 100;
+}
+.footer{
+   width: 90%;
+    height: 1.2rem;
+    position: absolute;
+    left:0;right: 0;
+    margin: 0 auto;
+    display: flex;
+    font-size: 0.28rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer li:nth-child(1){
+    width: 20%;
+    float: left;
+    background:url("../img/1111.png") 0.4rem 0.2rem no-repeat;
+    background-size: 0.4rem 0.4rem;
+    margin-bottom: 0.2rem;
+}
+.footer li:nth-child(2){
+    width: 20%;
+    float: left;
+    background:url("../img/111.png") 0.4rem 0.2rem no-repeat;
+    background-size: 0.4rem 0.4rem;
+}
+.footer li:nth-child(3){
+    width: 20%;
+    float: left;
+    background:url("../img/11.png") 0.4rem 0.2rem no-repeat;
+    background-size: 0.4rem 0.4rem;
+}
+.footer li:nth-child(4){
+     width: 20%;
+     float: left;
+    background:url("../img/1.png") 0.4rem 0.2rem no-repeat;
+    background-size: 0.4rem 0.4rem;
+ }
+ .footer li a{
+     width: 100%;
+     height: 100%;
+     display: block;
+     text-align: center;
+     line-height: 1.6rem;
+     margin-left: -0.06rem;
+ }
+
+.list-banner a img{
+    width: 100%;
+    height: 3.8rem;
+    position: fixed;
+    left:0;
+    top:0.94rem;
+    z-index: 20;
+}
+.list-share{
+    height: 2rem;
+    font-size: 0.5rem;
+    margin-top: 0.4rem;
+    margin-left: 0.2rem;
+}
+.show .btn li:nth-child(1){
+    font-weight: 700;
+    color:#000;
+}
+.show .btn li:nth-child(2){
+    float: right;
+    line-height: 0.82rem;
+    text-align: right;
+}
+.show-main{
+    width: 90%;
+    height: auto;
+    position: absolute;
+    left:0;right: 0;
+    margin: 0 auto;
+    top:0.94rem;
+}
+.show-title h1{
+    margin-top: 0.2rem;
+    font-size: 0.46rem;
+    font-weight: bold;
+}
+.show-title span{
+    font-size: 0.28rem;
+    float: left;
+    margin-top: 0.1rem;
+    color: #888;
+}
+.show-title .time{
+    height: 0.32rem;
+    font-size: 0.28rem;
+    float: left;
+    line-height: 0.32rem;
+    margin-top: 0.1rem;
+    margin-left: 0.2rem;
+    color: #888;
+}
+.show-content img{
+    width:100%;
+    height: 3.94rem;
+    margin-top: 0.2rem;
+}
+.txt-des{
+    font-size: 0.32rem;
+}
+.show-content p{
+    font-size: 0.36rem;
+    color:#1b1b1b;
+    margin: 0.4rem 0;
+}
+.show-content p a{
+    font-weight: 400;
+    color:#277de2;
+}
+.tuijian{
+    height: 0.6rem;
+    text-align: center;
+    line-height: 0.6rem;
+    font-size: 0.28rem;
+    margin-top: 0.6rem;
+}
+.about .tab-list-item li{
+    border-bottom:1px solid #CCCCCC;
+}
+.about .tab-list-item li:nth-child(3){
+    border-bottom:none;
+}
