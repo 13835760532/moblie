@@ -6,6 +6,7 @@ body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,header,section{
     font-weight: normal;
 }
 a{
+    color:#000;
     text-decoration: none;/*下划线*/
 }
 img{
@@ -247,6 +248,9 @@ footer{
     margin-top: 0.4rem;
     margin-left: 0.2rem;
 }
+.list-box{
+    width: 90%;
+}
 .show .btn li:nth-child(1){
     font-weight: 700;
     color:#000;
@@ -313,4 +317,15 @@ footer{
 }
 .about .tab-list-item li:nth-child(3){
     border-bottom:none;
+}
+/*//主页*/
+.zhuye .btn{
+    display: flex;
+    justify-content: space-between;
+}
+.zhuye .btn li{
+    width: auto;
+}
+.zhuye .btn li:nth-child(2){
+    margin-right: 0;
 }
